@@ -1,0 +1,288 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 35vw;
+  height: 130vh;
+}
+
+header nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.825);
+}
+
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 600px;
+          flex: 2 1 600px;
+  padding: 0rem 5rem;
+}
+
+main section.left h1 {
+  color: orange;
+  font-size: 2rem;
+}
+
+main section.left p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  position: relative;
+}
+
+main section.right img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 40vh;
+  right: 13vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem 4rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+}
+
+main section.table table tr:hover {
+  background-color: #f1bd5d;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+  padding-top: 4rem;
+}
+
+main section.picture img {
+  width: 30vw;
+}
+
+main section.picture div.orangeRect {
+  width: 30vw;
+  height: 90vh;
+  background-color: orange;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: -1;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+}
+
+main section.form form {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0rem 1.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: orange;
+  color: white;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+  border: none;
+  width: 70%;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+  margin-top: 0.5rem;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #e08958;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+}
+
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0rem 2rem 5rem;
+}
+
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  width: 60vw;
+  height: 15vh;
+}
+
+footer a img {
+  padding: 1rem;
+  width: 70px;
+  height: 70px;
+}
+
+a.active {
+  color: orange;
+}
+
+@media screen and (max-width: 1000px) {
+  .oragne {
+    opacity: 0.5;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right img {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 50vw;
+    height: 50vw;
+  }
+  section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.picture img {
+    width: 60vw;
+  }
+  section.picture div.orangeRect {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
