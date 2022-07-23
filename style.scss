@@ -13,7 +13,7 @@ body {
     position: absolute;
     top: -10vh;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     width: 35vw;
     height: 130vh;
 }
@@ -52,22 +52,22 @@ main {
 
 
     section.left {
-        flex: 2 1 600px;
+        flex: 2 1 700px;
         padding: 0rem 5rem;
 
         h1 {
             color: orange;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             padding: 1rem 0rem;
         }
     }
 
     section.right {
-        flex: 1 1 400px;
+        flex: 1 1 300px;
         position: relative;
 
         img {
@@ -114,7 +114,7 @@ main {
 
         div.orangeRect {
             width: 30vw;
-            height: 90vh;
+            height: 40vw;
             background-color: orange;
             position: absolute;
             top: 100px;
@@ -175,11 +175,23 @@ main {
         width: 3px;
     }
 
+    section.projects {
+        padding: 3rem 0rem 2rem 5rem;
+
+        ol {
+
+            li {
+                padding-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
     section.contact {
-        flex: 1 1 300px;
+        // flex: 1 1 300px;
         display: flex;
         align-items: center;
-        padding: 2rem 0rem 2rem 5rem;
+        padding: 2rem 0rem 1rem 5rem;
         // justify-content: center;
 
         div.content {
@@ -187,6 +199,17 @@ main {
             h2 {
                 margin: 1rem 0rem;
             }
+        }
+    }
+
+    section.bearbig {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 4rem;
+
+        img {
+            width: 200px;
         }
     }
 }
@@ -216,8 +239,8 @@ a.active {
 }
 
 @media screen and (max-width: 1000px) {
-    .oragne {
-        opacity: 0.5;
+    .orange {
+        display: none;
     }
 
     header {
